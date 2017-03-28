@@ -1,0 +1,8 @@
+[![build-status](https://gitlab.com/bagrounds/monad-reader/badges/master/build.svg)](https://gitlab.com/bagrounds/monad-reader/commits/master)
+[![coverage-report](https://gitlab.com/bagrounds/monad-reader/badges/master/coverage.svg)](https://gitlab.com/bagrounds/monad-reader/commits/master)
+[![license](https://img.shields.io/npm/l/monad-reader.svg)](https://www.npmjs.com/package/monad-reader)
+[![version](https://img.shields.io/npm/v/monad-reader.svg)](https://www.npmjs.com/package/monad-reader)
+[![downloads](https://img.shields.io/npm/dt/monad-reader.svg)](https://www.npmjs.com/package/monad-reader)
+[![downloads-monthly](https://img.shields.io/npm/dm/monad-reader.svg)](https://www.npmjs.com/package/monad-reader)
+[![dependencies](https://david-dm.org/bagrounds/monad-reader/status.svg)](https://david-dm.org/bagrounds/monad-reader)
+
