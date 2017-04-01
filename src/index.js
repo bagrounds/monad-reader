@@ -6,32 +6,25 @@
   'use strict'
 
   /* imports */
-  var Reader = require('./Reader')
   var compose = require('fun-compose')
+  var K = require('fun-constant')
   var funMonad = require('fun-monad')
+  var funAssert = require('fun-assert')
+
+  var isFunction = funAssert.type('Function')
 
   /* exports */
   module.exports = funMonad({
-    type: Reader,
-    of: of,
-    map: map,
+    type: isFunction,
+    of: K,
+    map: compose,
     join: join
   })
 
-  function of (value) {
-    return Reader(function (e) {
-      return value
-    })
-  }
-
   function join (mma) {
-    return Reader(function (env) {
-      return mma.run(env).run(env)
-    })
-  }
-
-  function map (f, ma) {
-    return Reader(compose(f, ma.value))
+    return function (env) {
+      return mma(env)(env)
+    }
   }
 })()
 
